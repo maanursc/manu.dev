@@ -13,7 +13,10 @@
   },
   "profile_card": {
     "name": "Emmanuel Rosa Sarachini de Oliveira",
-    "title": "Full Stack Software Engineer"
+    "title": "Full Stack Software Engineer",
+    "email": "eoliveira95@gmail.com",
+    "location": "Bragança Paulista, São Paulo, Brazil",
+    "phone": "+55 11 97015-1..."
   },
   "landing_page": {
     "language_dialog": {
@@ -27,20 +30,94 @@
     }
   },
   "description_card": {
-    "title": "Hi! I'm Emmanuel 👋",
-    "subtitle": "I'm a full stack engineer that loves building delightful and dependable products!",
-    "resume_1": "I am a seasoned Software Developer Specialist with over 8 years of experience in the field, currently contributing my expertise to Encora Inc. as a Full Stack Developer. In my current role, I work remotely from Campinas, São Paulo, Brazil, engaging in diverse projects predominantly based in the United States. My responsibilities span various domains such as cloud communication and facilities management.",
-    "resume_encora_title": "Encora Inc. (Jul 2021 - Present)",
-    "resume_encora_subtitle": "Full-time Software Developer Specialist",
-    "resume_encora_details": "Working on projects for U.S.-based clients in areas like cloud communication and facilities management. Proficient in JavaScript, TypeScript, HTML5, CSS, SCSS/SASS, and various databases including Oracle, MongoDB, PostgreSQL, and Amazon Aurora. Experienced with frameworks such as Angular (712), Node.js (1016), AngularJS, jQuery, VueJS, and React. Well-versed in Web Service RESTful and Web Service SOAP architectures. Familiar with TDD methodologies using Jest, RTL, and Enzyme. Skilled in estimation of story points, team collaboration, and analysis of epic branches. Proficient in Scrum methodologies.",
-    "resume_sonda_title": "SONDA (Apr 2018 - Jul 2021)",
-    "resume_sonda_details": "Contributed for 3 years and 4 months, specializing in JavaScript, TypeScript, Java, Angular Material, Oracle, MongoDB, and various frameworks. Possesses expertise in Web Service RESTful and Web Service SOAP architectures. Extensive knowledge in debugging tools and frameworks such as Apache Struts, EJB, JMS, Jax-RS, Jboss EAP 7.1, Jboss EAP 6.2. Worked with Visual Studio, Eclipse, Android Studio, Git, and SVN. Operated on Windows and Linux platforms. Managed projects with Scrum, Cascata, CMMI, and PMI methodologies",
-    "resume_project_manager_title": "Project Manager at SONDA (Oct 2015 - Apr 2018)",
-    "resume_project_manager_details": "Managed projects as both an Analyst and Project Manager. Led projects in Mobility (Client-Side/Server-Side) and integration solutions in WS. Applied PMBOK knowledge areas and PMI best practices, utilizing the CMMI level III documentation process.",
-    "resume_analyst_title": "Analyst at SONDA (Apr 2015 - Oct 2017)",
-    "resume_analyst_details": "Worked as a Project Manager in Road Maps and projects for clients in the Mobility sector. Responsible for requirements gathering, scope definition, project planning, prototype development, test execution, and project monitoring and closure. Applied CMMI certification and PMBOK methodology. Supported product development, clients, and production. Conducted prospecting for product improvements and research for new technologies.",
-    "resume_skills": "Proficient in Agile methodologies. Certified Project Manager with expertise in PMBOK and CMMI processes. Strong analytical and problem-solving skills. Excellent communication and collaboration abilities. Adept at managing projects from conception to delivery.",
-    "resume_2": "I am passionate about leveraging my skills to contribute to innovative projects and deliver impactful solutions. Let's connect and explore new possibilities!"
+    "about_me": "About Me",
+    "about_me_description": [
+      "I am a Full Stack Software Engineer with a passion for creating innovative solutions.",
+      "I have experience in various technologies and frameworks, and I am always eager to learn new skills.",
+      "My goal is to build efficient and scalable applications that solve real-world problems."
+    ],
+    "education": "Education",
+    "education_description": [
+      "Technical Degree in Computer Science from the Federal Institute of Education, Science and Technology of São Paulo (IFSP), 2016.",
+      "Bachelor's Degree in Computer Engineering from the Saint Francis University (USF), 2022.",
+      "MBA in Project Management from the University of São Paulo (USP), 2023."
+    ],
+    "experience": "Experience",
+    "experience_description": [
+      "Encora Inc. - Technical Lead (June 2024 - Present) | Software Developer Specialist (July 2021 - Present) - Working on various client projects primarily based in the USA, with scopes including cloud communication, facilities, etc. Technologies: JavaScript, TypeScript, Angular, React, Node.js, AWS, MongoDB, PostgreSQL.",
+      "SONDA - Full Stack Developer (April 2018 - July 2021) - Developed web applications using Angular, Node.js, Java. Worked with Oracle, MongoDB databases. Applied Scrum methodology and project management following PMI standards.",
+      "SONDA - Project Manager (October 2015 - April 2018) - Requirements analysis, scope management, functional detailing for customization, activity planning, process monitoring and control. Applied PMBOK knowledge areas and PMI best practices using CMMI level III documentation process.",
+      "SONDA - Analyst (April 2015 - October 2017) - Project manager for Road Maps and client projects in Mobility sector. Requirements gathering, scope definition, project planning, prototype development, test execution, and project closure following CMMI quality certification.",
+      "Escritório Contábil Leme S/C Ltda - Administrative Office Assistant (February 2013 - January 2014) - Assisted Fiscal, Accounting, Legal, HR departments. Controlled entries/exits and service provision for companies under ME, Simples Nacional and Lucro Presumido regimes."
+    ],
+    "skills": "Skills & Tools",
+    "programming_languages": "Programming Languages",
+    "programming_languages_list": ["JavaScript", "TypeScript", "Java"],
+    "frontend_technologies": "Frontend Technologies",
+    "frontend_technologies_list": [
+      "HTML5",
+      "CSS3",
+      "SCSS/SASS",
+      "React",
+      "Angular 7-12",
+      "AngularJS",
+      "Vue.js",
+      "jQuery",
+      "Material-UI (MUI)",
+      "Angular Material"
+    ],
+    "backend_technologies": "Backend Technologies",
+    "backend_technologies_list": [
+      "Node.js 10-20",
+      "RESTful Web Services",
+      "SOAP Web Services",
+      "Apache Struts",
+      "EJB",
+      "JMS",
+      "Jax-RS",
+      "JBoss EAP 7.1/6.2"
+    ],
+    "databases": "Databases",
+    "databases_list": ["Oracle", "MongoDB", "PostgreSQL", "Amazon Aurora"],
+    "cloud_aws": "Cloud & AWS Services",
+    "cloud_aws_list": [
+      "Amazon Web Services (AWS)",
+      "Amazon Aurora",
+      "DataDog",
+      "Mandrill",
+      "Segment",
+      "Eloqua",
+      "ContentStack"
+    ],
+    "development_tools": "Development Tools & IDEs",
+    "development_tools_list": [
+      "Visual Studio Code",
+      "Eclipse",
+      "Android Studio",
+      "Git",
+      "SVN",
+      "Jira",
+      "Slack"
+    ],
+    "testing_frameworks": "Testing Frameworks",
+    "testing_frameworks_list": [
+      "Jest",
+      "React Testing Library (RTL)",
+      "Enzyme",
+      "Test-Driven Development (TDD)"
+    ],
+    "operating_systems": "Operating Systems",
+    "operating_systems_list": ["Linux/Ubuntu", "macOS", "Windows"],
+    "methodologies": "Methodologies & Project Management",
+    "methodologies_list": [
+      "Scrum",
+      "Agile",
+      "Waterfall (Cascata)",
+      "PMBOK/PMI",
+      "CMMI Level III",
+      "Story Point Estimation",
+      "Epic Analysis"
+    ]
   },
   "footer": {
     "disclaimer": "© 2023 by Emmanuel Rosa Sarachini de Oliveira.",
@@ -52,7 +129,7 @@
       "email_address": "eoliveira95@gmail.com",
       "follow": "Follow me =]",
       "linkedin": "https://www.linkedin.com/in/emmanuel-rosa-sarachini-de-oliveira-4a7b4874/",
-      "github": "https://github.com/Encora-Emmanuel",
+      "github": "https://github.com/maanursc",
       "instagram": "https://instagram.com/maanusc"
     }
   }

@@ -14,7 +14,7 @@ import { useTranslation } from "react-i18next";
 import i18n from "../i18n"; // Update the path as per your project structure
 
 const headerConfig = {
-  fontFamily: ["'poppins'", "sans-serif"].join(","),
+  fontFamily: ["'montserrat'", "sans-serif"].join(","),
 };
 
 interface ThemeContextProps {
