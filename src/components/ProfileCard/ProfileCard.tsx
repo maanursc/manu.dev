@@ -33,6 +33,14 @@ export const ProfileCard: FunctionComponent = () => {
           sx={{
             height: "300px",
             width: "300px",
+            "@media (max-width: 768px)": {
+              height: "250px",
+              width: "250px",
+            },
+            "@media (max-width: 480px)": {
+              height: "200px",
+              width: "200px",
+            },
           }}
         />
         <Typography
@@ -42,6 +50,14 @@ export const ProfileCard: FunctionComponent = () => {
             color: Color.White,
             letterSpacing: "0.25em",
             textTransform: "uppercase",
+            "@media (max-width: 768px)": {
+              fontSize: "20px",
+              letterSpacing: "0.2em",
+            },
+            "@media (max-width: 480px)": {
+              fontSize: "18px",
+              letterSpacing: "0.15em",
+            },
           }}
         >
           {t("profile_card.name")}
@@ -52,6 +68,14 @@ export const ProfileCard: FunctionComponent = () => {
             textTransform: "uppercase",
             letterSpacing: "0.25em",
             color: Color.White,
+            "@media (max-width: 768px)": {
+              fontSize: "15px",
+              letterSpacing: "0.2em",
+            },
+            "@media (max-width: 480px)": {
+              fontSize: "13px",
+              letterSpacing: "0.15em",
+            },
           }}
         >
           {t("profile_card.title")}
@@ -63,30 +87,103 @@ export const ProfileCard: FunctionComponent = () => {
             width: "90%",
             gap: "8px",
             justifyContent: "center",
-            "@media (max-width: 600px)": {
+            "@media (max-width: 768px)": {
               flexDirection: "column",
               alignItems: "center",
               spacing: 2,
+              gap: "12px",
+            },
+            "@media (max-width: 480px)": {
+              gap: "8px",
             },
           }}
         >
-          <Stack direction="row" spacing={1} sx={{ alignItems: "center" }}>
-            <EmailIcon sx={{ fill: "#6428e9" }} />
-            <Typography sx={{ color: Color.White }}>
+          <Stack
+            direction="row"
+            spacing={1}
+            sx={{
+              alignItems: "center",
+              "@media (max-width: 480px)": {
+                spacing: 0.5,
+              },
+            }}
+          >
+            <EmailIcon
+              sx={{
+                fill: "#6428e9",
+                "@media (max-width: 480px)": {
+                  fontSize: "18px",
+                },
+              }}
+            />
+            <Typography
+              sx={{
+                color: Color.White,
+                "@media (max-width: 480px)": {
+                  fontSize: "14px",
+                },
+              }}
+            >
               {t("profile_card.email")}
             </Typography>
           </Stack>
 
-          <Stack direction="row" spacing={1} sx={{ alignItems: "center" }}>
-            <LocationPinIcon sx={{ fill: "#6428e9" }} />
-            <Typography sx={{ color: Color.White }}>
+          <Stack
+            direction="row"
+            spacing={1}
+            sx={{
+              alignItems: "center",
+              "@media (max-width: 480px)": {
+                spacing: 0.5,
+              },
+            }}
+          >
+            <LocationPinIcon
+              sx={{
+                fill: "#6428e9",
+                "@media (max-width: 480px)": {
+                  fontSize: "18px",
+                },
+              }}
+            />
+            <Typography
+              sx={{
+                color: Color.White,
+                "@media (max-width: 480px)": {
+                  fontSize: "14px",
+                },
+              }}
+            >
               {t("profile_card.location")}
             </Typography>
           </Stack>
 
-          <Stack direction="row" spacing={1} sx={{ alignItems: "center" }}>
-            <PhoneIcon sx={{ fill: "#6428e9" }} />
-            <Typography sx={{ color: Color.White }}>
+          <Stack
+            direction="row"
+            spacing={1}
+            sx={{
+              alignItems: "center",
+              "@media (max-width: 480px)": {
+                spacing: 0.5,
+              },
+            }}
+          >
+            <PhoneIcon
+              sx={{
+                fill: "#6428e9",
+                "@media (max-width: 480px)": {
+                  fontSize: "18px",
+                },
+              }}
+            />
+            <Typography
+              sx={{
+                color: Color.White,
+                "@media (max-width: 480px)": {
+                  fontSize: "14px",
+                },
+              }}
+            >
               {t("profile_card.phone")}
             </Typography>
           </Stack>

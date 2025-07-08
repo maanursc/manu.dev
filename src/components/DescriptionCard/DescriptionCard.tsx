@@ -66,6 +66,33 @@ export const DescriptionCard: FunctionComponent = () => {
     returnObjects: true,
   }) as string[];
 
+  // Shared styles for better mobile responsiveness
+  const skillSectionStyles = {
+    marginBottom: "16px",
+    "@media (max-width: 480px)": {
+      marginBottom: "12px",
+    },
+  };
+
+  const skillTitleStyles = {
+    color: "white",
+    marginBottom: "8px",
+    fontWeight: "bold",
+    "@media (max-width: 480px)": {
+      fontSize: "0.85rem",
+      marginBottom: "6px",
+    },
+  };
+
+  const skillChipBaseStyles = {
+    color: "white",
+    fontSize: "12px",
+    "@media (max-width: 480px)": {
+      fontSize: "10px",
+      height: "24px",
+    },
+  };
+
   return (
     <Box
       sx={{
@@ -77,10 +104,17 @@ export const DescriptionCard: FunctionComponent = () => {
         gap: "24px",
         alignItems: "stretch",
         justifySelf: "center",
-        "@media (max-width: 768px)": {
+        "@media (max-width: 900px)": {
           flexDirection: "column",
           height: "auto",
           gap: "16px",
+          padding: "16px",
+          width: "95%",
+        },
+        "@media (max-width: 480px)": {
+          padding: "12px",
+          gap: "12px",
+          width: "98%",
         },
       }}
     >
@@ -92,19 +126,48 @@ export const DescriptionCard: FunctionComponent = () => {
           padding: "16px",
           backgroundColor: "rgba(255, 255, 255, 0.05)",
           borderRadius: "8px",
+          "@media (max-width: 480px)": {
+            padding: "12px",
+          },
         }}
       >
         <CardContent>
-          <Typography variant="h6" sx={{ color: "white" }}>
+          <Typography
+            variant="h6"
+            sx={{
+              color: "white",
+              "@media (max-width: 480px)": {
+                fontSize: "1.15rem",
+              },
+            }}
+          >
             {t("description_card.about_me")}
           </Typography>
-          <Typography variant="body1" sx={{ color: "white", marginTop: "8px" }}>
+          <Typography
+            variant="body1"
+            sx={{
+              color: "white",
+              marginTop: "8px",
+              "@media (max-width: 480px)": {
+                fontSize: "0.9rem",
+                lineHeight: "1.4",
+              },
+            }}
+          >
             {aboutMeDescription}
           </Typography>
         </CardContent>
 
         <CardContent>
-          <Typography variant="h6" sx={{ color: "white" }}>
+          <Typography
+            variant="h6"
+            sx={{
+              color: "white",
+              "@media (max-width: 480px)": {
+                fontSize: "1.15rem",
+              },
+            }}
+          >
             {t("description_card.education")}
           </Typography>
           <Box sx={{ marginTop: "8px" }}>
@@ -115,6 +178,9 @@ export const DescriptionCard: FunctionComponent = () => {
                   display: "flex",
                   alignItems: "flex-start",
                   marginBottom: "8px",
+                  "@media (max-width: 480px)": {
+                    marginBottom: "6px",
+                  },
                 }}
               >
                 <Typography
@@ -123,6 +189,10 @@ export const DescriptionCard: FunctionComponent = () => {
                     marginRight: "8px",
                     lineHeight: "1.5",
                     fontSize: "16px",
+                    "@media (max-width: 480px)": {
+                      fontSize: "14px",
+                      marginRight: "6px",
+                    },
                   }}
                 >
                   •
@@ -133,6 +203,10 @@ export const DescriptionCard: FunctionComponent = () => {
                     color: "white",
                     lineHeight: "1.5",
                     flex: 1,
+                    "@media (max-width: 480px)": {
+                      fontSize: "0.9rem",
+                      lineHeight: "1.4",
+                    },
                   }}
                 >
                   {item}
@@ -143,7 +217,15 @@ export const DescriptionCard: FunctionComponent = () => {
         </CardContent>
 
         <CardContent>
-          <Typography variant="h6" sx={{ color: "white" }}>
+          <Typography
+            variant="h6"
+            sx={{
+              color: "white",
+              "@media (max-width: 480px)": {
+                fontSize: "1.15rem",
+              },
+            }}
+          >
             {t("description_card.experience")}
           </Typography>
           <Box sx={{ marginTop: "8px" }}>
@@ -154,6 +236,9 @@ export const DescriptionCard: FunctionComponent = () => {
                   display: "flex",
                   alignItems: "flex-start",
                   marginBottom: "8px",
+                  "@media (max-width: 480px)": {
+                    marginBottom: "6px",
+                  },
                 }}
               >
                 <Typography
@@ -162,6 +247,10 @@ export const DescriptionCard: FunctionComponent = () => {
                     marginRight: "8px",
                     lineHeight: "1.5",
                     fontSize: "16px",
+                    "@media (max-width: 480px)": {
+                      fontSize: "14px",
+                      marginRight: "6px",
+                    },
                   }}
                 >
                   •
@@ -172,6 +261,10 @@ export const DescriptionCard: FunctionComponent = () => {
                     color: "white",
                     lineHeight: "1.5",
                     flex: 1,
+                    "@media (max-width: 480px)": {
+                      fontSize: "0.9rem",
+                      lineHeight: "1.4",
+                    },
                   }}
                 >
                   {item}
@@ -187,7 +280,7 @@ export const DescriptionCard: FunctionComponent = () => {
         sx={{
           width: "2px",
           background: Color.DarkGray,
-          "@media (max-width: 768px)": {
+          "@media (max-width: 900px)": {
             display: "none",
           },
         }}
@@ -202,21 +295,48 @@ export const DescriptionCard: FunctionComponent = () => {
           backgroundColor: "rgba(255, 255, 255, 0.05)",
           borderRadius: "8px",
           gap: "16px",
+          "@media (max-width: 480px)": {
+            padding: "12px",
+            gap: "12px",
+          },
         }}
       >
         <CardContent>
           <Typography
             variant="h6"
-            sx={{ color: "white", marginBottom: "16px" }}
+            sx={{
+              color: "white",
+              marginBottom: "16px",
+              "@media (max-width: 480px)": {
+                fontSize: "1.15rem",
+                marginBottom: "12px",
+              },
+            }}
           >
             {t("description_card.skills")}
           </Typography>
 
           {/* Programming Languages */}
-          <Box sx={{ marginBottom: "16px" }}>
+          <Box
+            sx={{
+              ...skillSectionStyles,
+              marginBottom: "16px",
+              "@media (max-width: 480px)": {
+                marginBottom: "12px",
+              },
+            }}
+          >
             <Typography
               variant="subtitle2"
-              sx={{ color: "white", marginBottom: "8px", fontWeight: "bold" }}
+              sx={{
+                ...skillTitleStyles,
+                marginBottom: "8px",
+                fontWeight: "bold",
+                "@media (max-width: 480px)": {
+                  fontSize: "0.85rem",
+                  marginBottom: "6px",
+                },
+              }}
             >
               {t("description_card.programming_languages")}
             </Typography>
@@ -232,6 +352,10 @@ export const DescriptionCard: FunctionComponent = () => {
                     "&:hover": {
                       backgroundColor: "#5020d9",
                     },
+                    "@media (max-width: 480px)": {
+                      fontSize: "10px",
+                      height: "24px",
+                    },
                   }}
                 />
               ))}
@@ -239,11 +363,8 @@ export const DescriptionCard: FunctionComponent = () => {
           </Box>
 
           {/* Frontend Technologies */}
-          <Box sx={{ marginBottom: "16px" }}>
-            <Typography
-              variant="subtitle2"
-              sx={{ color: "white", marginBottom: "8px", fontWeight: "bold" }}
-            >
+          <Box sx={skillSectionStyles}>
+            <Typography variant="subtitle2" sx={skillTitleStyles}>
               {t("description_card.frontend_technologies")}
             </Typography>
             <Box sx={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
@@ -252,9 +373,8 @@ export const DescriptionCard: FunctionComponent = () => {
                   key={index}
                   label={skill}
                   sx={{
+                    ...skillChipBaseStyles,
                     backgroundColor: "#2196f3",
-                    color: "white",
-                    fontSize: "12px",
                     "&:hover": {
                       backgroundColor: "#1976d2",
                     },
@@ -265,11 +385,8 @@ export const DescriptionCard: FunctionComponent = () => {
           </Box>
 
           {/* Backend Technologies */}
-          <Box sx={{ marginBottom: "16px" }}>
-            <Typography
-              variant="subtitle2"
-              sx={{ color: "white", marginBottom: "8px", fontWeight: "bold" }}
-            >
+          <Box sx={skillSectionStyles}>
+            <Typography variant="subtitle2" sx={skillTitleStyles}>
               {t("description_card.backend_technologies")}
             </Typography>
             <Box sx={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
@@ -278,9 +395,8 @@ export const DescriptionCard: FunctionComponent = () => {
                   key={index}
                   label={skill}
                   sx={{
+                    ...skillChipBaseStyles,
                     backgroundColor: "#4caf50",
-                    color: "white",
-                    fontSize: "12px",
                     "&:hover": {
                       backgroundColor: "#388e3c",
                     },
@@ -291,11 +407,8 @@ export const DescriptionCard: FunctionComponent = () => {
           </Box>
 
           {/* Databases */}
-          <Box sx={{ marginBottom: "16px" }}>
-            <Typography
-              variant="subtitle2"
-              sx={{ color: "white", marginBottom: "8px", fontWeight: "bold" }}
-            >
+          <Box sx={skillSectionStyles}>
+            <Typography variant="subtitle2" sx={skillTitleStyles}>
               {t("description_card.databases")}
             </Typography>
             <Box sx={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
@@ -304,9 +417,8 @@ export const DescriptionCard: FunctionComponent = () => {
                   key={index}
                   label={skill}
                   sx={{
+                    ...skillChipBaseStyles,
                     backgroundColor: "#ff9800",
-                    color: "white",
-                    fontSize: "12px",
                     "&:hover": {
                       backgroundColor: "#f57c00",
                     },
@@ -317,11 +429,8 @@ export const DescriptionCard: FunctionComponent = () => {
           </Box>
 
           {/* Cloud & AWS */}
-          <Box sx={{ marginBottom: "16px" }}>
-            <Typography
-              variant="subtitle2"
-              sx={{ color: "white", marginBottom: "8px", fontWeight: "bold" }}
-            >
+          <Box sx={skillSectionStyles}>
+            <Typography variant="subtitle2" sx={skillTitleStyles}>
               {t("description_card.cloud_aws")}
             </Typography>
             <Box sx={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
@@ -330,9 +439,8 @@ export const DescriptionCard: FunctionComponent = () => {
                   key={index}
                   label={skill}
                   sx={{
+                    ...skillChipBaseStyles,
                     backgroundColor: "#ff5722",
-                    color: "white",
-                    fontSize: "12px",
                     "&:hover": {
                       backgroundColor: "#d84315",
                     },
@@ -343,11 +451,8 @@ export const DescriptionCard: FunctionComponent = () => {
           </Box>
 
           {/* Development Tools */}
-          <Box sx={{ marginBottom: "16px" }}>
-            <Typography
-              variant="subtitle2"
-              sx={{ color: "white", marginBottom: "8px", fontWeight: "bold" }}
-            >
+          <Box sx={skillSectionStyles}>
+            <Typography variant="subtitle2" sx={skillTitleStyles}>
               {t("description_card.development_tools")}
             </Typography>
             <Box sx={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
@@ -356,9 +461,8 @@ export const DescriptionCard: FunctionComponent = () => {
                   key={index}
                   label={skill}
                   sx={{
+                    ...skillChipBaseStyles,
                     backgroundColor: "#9c27b0",
-                    color: "white",
-                    fontSize: "12px",
                     "&:hover": {
                       backgroundColor: "#7b1fa2",
                     },
@@ -369,11 +473,8 @@ export const DescriptionCard: FunctionComponent = () => {
           </Box>
 
           {/* Testing Frameworks */}
-          <Box sx={{ marginBottom: "16px" }}>
-            <Typography
-              variant="subtitle2"
-              sx={{ color: "white", marginBottom: "8px", fontWeight: "bold" }}
-            >
+          <Box sx={skillSectionStyles}>
+            <Typography variant="subtitle2" sx={skillTitleStyles}>
               {t("description_card.testing_frameworks")}
             </Typography>
             <Box sx={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
@@ -382,9 +483,8 @@ export const DescriptionCard: FunctionComponent = () => {
                   key={index}
                   label={skill}
                   sx={{
+                    ...skillChipBaseStyles,
                     backgroundColor: "#795548",
-                    color: "white",
-                    fontSize: "12px",
                     "&:hover": {
                       backgroundColor: "#5d4037",
                     },
@@ -395,11 +495,8 @@ export const DescriptionCard: FunctionComponent = () => {
           </Box>
 
           {/* Operating Systems */}
-          <Box sx={{ marginBottom: "16px" }}>
-            <Typography
-              variant="subtitle2"
-              sx={{ color: "white", marginBottom: "8px", fontWeight: "bold" }}
-            >
+          <Box sx={skillSectionStyles}>
+            <Typography variant="subtitle2" sx={skillTitleStyles}>
               {t("description_card.operating_systems")}
             </Typography>
             <Box sx={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
@@ -408,9 +505,8 @@ export const DescriptionCard: FunctionComponent = () => {
                   key={index}
                   label={skill}
                   sx={{
+                    ...skillChipBaseStyles,
                     backgroundColor: "#607d8b",
-                    color: "white",
-                    fontSize: "12px",
                     "&:hover": {
                       backgroundColor: "#455a64",
                     },
@@ -421,11 +517,8 @@ export const DescriptionCard: FunctionComponent = () => {
           </Box>
 
           {/* Methodologies */}
-          <Box sx={{ marginBottom: "16px" }}>
-            <Typography
-              variant="subtitle2"
-              sx={{ color: "white", marginBottom: "8px", fontWeight: "bold" }}
-            >
+          <Box sx={skillSectionStyles}>
+            <Typography variant="subtitle2" sx={skillTitleStyles}>
               {t("description_card.methodologies")}
             </Typography>
             <Box sx={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
@@ -434,9 +527,8 @@ export const DescriptionCard: FunctionComponent = () => {
                   key={index}
                   label={skill}
                   sx={{
+                    ...skillChipBaseStyles,
                     backgroundColor: "#009688",
-                    color: "white",
-                    fontSize: "12px",
                     "&:hover": {
                       backgroundColor: "#00695c",
                     },

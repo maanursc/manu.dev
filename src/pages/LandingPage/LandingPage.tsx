@@ -62,6 +62,13 @@ export const LandingPage: FunctionComponent = () => {
           gridTemplateRows: "auto auto",
           gap: "0px",
           padding: "16px",
+          "@media (max-width: 768px)": {
+            padding: "12px",
+            gap: "8px",
+          },
+          "@media (max-width: 480px)": {
+            padding: "8px",
+          },
         }}
       >
         <ProfileCard />
@@ -79,6 +86,10 @@ export const LandingPage: FunctionComponent = () => {
             color: "white",
             borderRadius: "8px",
             width: "400px",
+            "@media (max-width: 480px)": {
+              width: "90%",
+              margin: "16px",
+            },
           },
         }}
       >

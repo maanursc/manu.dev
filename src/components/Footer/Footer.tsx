@@ -14,6 +14,10 @@ export const Footer: FunctionComponent = () => {
         padding: "4px",
         "@media (max-width: 600px)": {
           flexDirection: "column",
+          gap: "8px",
+        },
+        "@media (max-width: 480px)": {
+          padding: "8px",
         },
       }}
     >
@@ -21,6 +25,9 @@ export const Footer: FunctionComponent = () => {
         sx={{
           display: "flex",
           gap: "16px",
+          "@media (max-width: 480px)": {
+            gap: "12px",
+          },
         }}
       >
         <IconButton
@@ -28,24 +35,60 @@ export const Footer: FunctionComponent = () => {
           href="https://www.linkedin.com/in/emmanuel-rosa-sarachini-de-oliveira-4a7b4874/"
           target="_blank"
           rel="noopener noreferrer"
+          sx={{
+            "@media (max-width: 480px)": {
+              padding: "6px",
+            },
+          }}
         >
-          <LinkedInIcon sx={{ fill: "#6428e9" }} />
+          <LinkedInIcon
+            sx={{
+              fill: "#6428e9",
+              "@media (max-width: 480px)": {
+                fontSize: "20px",
+              },
+            }}
+          />
         </IconButton>
         <IconButton
           component="a"
           href="https://github.com/maanursc"
           target="_blank"
           rel="noopener noreferrer"
+          sx={{
+            "@media (max-width: 480px)": {
+              padding: "6px",
+            },
+          }}
         >
-          <GitHubIcon sx={{ fill: "#6428e9" }} />
+          <GitHubIcon
+            sx={{
+              fill: "#6428e9",
+              "@media (max-width: 480px)": {
+                fontSize: "20px",
+              },
+            }}
+          />
         </IconButton>
         <IconButton
           component="a"
           href="https://instagram.com/maanusc"
           target="_blank"
           rel="noopener noreferrer"
+          sx={{
+            "@media (max-width: 480px)": {
+              padding: "6px",
+            },
+          }}
         >
-          <InstagramIcon sx={{ fill: "#6428e9" }} />
+          <InstagramIcon
+            sx={{
+              fill: "#6428e9",
+              "@media (max-width: 480px)": {
+                fontSize: "20px",
+              },
+            }}
+          />
         </IconButton>
       </Box>
     </Toolbar>

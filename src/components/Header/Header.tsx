@@ -26,13 +26,29 @@ export const Header: FunctionComponent = () => {
         top: 16,
         right: 16,
         zIndex: 1000,
+        "@media (max-width: 480px)": {
+          top: 12,
+          right: 12,
+        },
       }}
     >
       <IconButton
         onClick={handleClick}
         aria-label={t("header.buttons.language")}
+        sx={{
+          "@media (max-width: 480px)": {
+            padding: "6px",
+          },
+        }}
       >
-        <LanguageIcon sx={{ fill: "#6428e9" }} />
+        <LanguageIcon
+          sx={{
+            fill: "#6428e9",
+            "@media (max-width: 480px)": {
+              fontSize: "20px",
+            },
+          }}
+        />
       </IconButton>
     </Box>
   );
